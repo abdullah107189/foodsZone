@@ -4,7 +4,7 @@ import ChefsCard from './ChefsCard';
 const Home = () => {
     const [datas, setDatas] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:3000/data`)
+        fetch(`https://foods-zone-server.vercel.app/data`)
             .then(res => res.json())
             .then(data => setDatas(data))
             .catch(error => console.log(error.message))
